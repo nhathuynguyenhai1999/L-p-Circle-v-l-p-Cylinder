@@ -1,0 +1,27 @@
+   +---------------------+
+   |       Circle        |
+   +---------------------+
+   | - radius: double    |
+   | - color: String     |
+   +---------------------+
+   | + Circle(radius: double, color: String) |
+   | + getRadius(): double |
+   | + setRadius(radius: double): void |
+   | + getColor(): String |
+   | + setColor(color: String): void |
+   | + getArea(): double |
+   | + toString(): String |
+   +---------------------+
+            |
+            v
+   +---------------------+
+   |      Cylinder       |
+   +---------------------+
+   | - height: double    |
+   +---------------------+
+   | + Cylinder(radius: double, color: String, height: double) |
+   | + getHeight(): double |
+   | + setHeight(height: double): void |
+   | + getVolume(): double |
+   | + toString(): String (overrides Circle's toString) |
+   +---------------------+
