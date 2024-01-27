@@ -19,7 +19,13 @@ public class Cylinder extends CircleTest {
     public double getVolume() {
         return getArea() * height;
     }
+    private static double getPerimeter(int radius) {
+        return 2 * Math.PI  * radius;
+    }
 
+    private static double getBaseArea(int radius) {
+        return Math.PI * radius * radius;
+    }
     @Override
     public String toString() {
         return "Cylinder [radius=" + getRadius() + ", color=" + getColor() + ", height=" + height + "]";
